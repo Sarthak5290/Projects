@@ -1,0 +1,499 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  min-height: 100vh;
+  background: fixed;
+}
+
+/* ================================= 
+  NAVBAR
+==================================== */
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2,
+h3 {
+  color: #34495e;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.45em;
+}
+
+.main-nav {
+  margin-top: 5px;
+}
+
+.main-nav a {
+  padding: 5px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+}
+
+.logo a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+}
+
+.main-nav a {
+  color: #34495e;
+  font-size: 0.99em;
+}
+
+#client {
+  color: black;
+  background-color: #88d6f532;
+  border-radius: 11px;
+  padding-bottom: -25px;
+  padding-top: 12px;
+  margin-top: -10px;
+  font-size: large;
+}
+
+.main-nav #client a:hover {
+  color: #7768c5;
+}
+
+.main-nav a:hover {
+  color: #007bff8a;
+}
+
+.header {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border: 1px solid #a2a2a2;
+  background-color: #88d6f532;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.you-color {
+  color: #5b5757;
+}
+
+/* VERTICAL LINE */
+.vertical-line {
+  display: inline-block;
+  border-left: 2px solid black;
+  margin: 0 10px;
+  height: 45px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+  .header,
+  .main-nav {
+    display: flex;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* ================================= 
+    Bottom nav-bar
+==================================== */
+
+.bottom-header {
+  margin: 5px 0px;
+  padding: 5px 0px;
+  background-color: #d8e8ee97;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.bottom_nav {
+  width: 100%;
+  height: 45px;
+  padding: 0 50px;
+}
+
+.bottom_nav ul {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom_nav ul li a {
+  color: #000000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+/* ================================= 
+    Bottom nav-bar
+==================================== */
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: left;
+}
+
+ul li a {
+  display: block;
+  padding: 8px 25px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul li ul li a:hover {
+  background-color: #7884a5a6;
+  border-radius: 5px;
+}
+
+ul li ul.dropdown {
+  min-width: 100%;
+  /* Set width of the dropdown */
+  background: #f2f2f2;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+  /* Display the dropdown */
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+/* ================================= 
+    Sliding images
+==================================== */
+.sliding {
+  width: 100%;
+  height: 50vh;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper {
+  width: 100%;
+  /* check here */
+  height: 50vh;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: white;
+}
+
+.swiper .swiper-pafination-bullet-active {
+  background-color: white;
+}
+
+/* ================================= 
+    overview
+==================================== */
+.overview {
+  background-image: url(/images/services.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.overview h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.overview p {
+  text-align: center;
+  padding: 0px 150px;
+}
+
+/* Flaired edges */
+
+hr.style-three {
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+hr.style-three:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+hr.style-four {
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: -20px;
+}
+
+hr.style-four:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: -20px;
+}
+
+/* ================================= 
+    service
+==================================== */
+
+.service {
+  background-image: url(/images/services.jpg);
+  /* padding-bottom: 550px; */
+}
+
+.service h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.service p,
+label {
+  text-align: center;
+  padding: 0px 150px;
+}
+
+.service-left img {
+  width: 400px;
+  height: 600px;
+  border: solid black;
+  border-radius: 7px;
+  margin-top: 26px;
+  /* margin-bottom: 260px; */
+  margin-left: 160px;
+}
+
+.service-left {
+  display: flex;
+  margin-top: 35px;
+}
+
+.service-left p {
+  margin-left: -50px;
+}
+
+/* ================================= 
+  collapsible
+==================================== */
+
+#accordian {
+  margin-top: 30px;
+  margin-right: 155px;
+}
+
+#accordian li {
+  list-style: none;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 50px;
+  margin-right: 2px;
+  background-color: #69aaec1d;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#accordian li label {
+  padding: 10px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(2, 40, 116);
+}
+
+#accordian label+input[type="radio"] {
+  display: none;
+}
+
+#accordian .content {
+  padding: 0px 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+#accordian label+input[type="radio"]:checked+.content {
+  max-height: 400px;
+}
+
+#accordian h3 {
+  margin: 15px 15px;
+  font-size: 18px;
+}
+
+
+
+/* ================================= 
+    Blog
+==================================== */
+.blog {
+  background-image: url(/images/services.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.blog h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.testimonials {
+  padding: 40px 0px;
+  color: #434343;
+  text-align: center;
+}
+
+.inner {
+
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col {
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.testimonial {
+  background: rgb(236, 252, 255);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+
+
+
+
+
+/* ================================= 
+    Footer
+==================================== */
+
+
+.site-footer {
+  background-color: #cdcdcd23;
+  padding: 45px 50px;
+  font-size: 15px;
+  line-height: 24px;
+  color: black;
+}
+
+.site-footer hr {
+  border-top-color: rgb(0, 0, 0);
+  opacity: 0.5
+}
+
+.site-footer hr.small {
+  margin: 20px 0
+}
+
+.site-footer h6 {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px
+}
+
+.copyright-text {
+  margin: 3px 0px;
+}
